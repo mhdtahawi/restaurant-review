@@ -296,3 +296,16 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+.skip-link {
+	position: absolute;
+	top: -50px;
+	left: 0;
+	background-color: white;
+	color: black;
+	z-index: 100;
+}
+
+.skip-link:focus {
+	top: 0;
+}
