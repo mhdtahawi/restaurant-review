@@ -10,11 +10,6 @@
 
   <title>Restaurant Info</title>
 </head>
-<script>
-if (window.navigator.serviceWorker){
-  window.navigator.serviceWorker.register('/sw.js').then( _ => console.log("SW registered sucessfully"));
-}
-</script>
 <body class="inside">
   <!-- Beginning header -->
   <header>
@@ -35,7 +30,7 @@ if (window.navigator.serviceWorker){
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
@@ -68,6 +63,11 @@ if (window.navigator.serviceWorker){
   <script type="text/javascript" src="js/restaurant_info.js"></script>
   <!-- Google Maps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_tKbW6A5pQ-eupxI56myUnHLqYCzOjKo&libraries=places&callback=initMap"></script>
+  <script>
+  if (window.navigator.serviceWorker){
+    window.navigator.serviceWorker.register('/sw.js').then( _ => console.log("SW registered sucessfully"));
+  }
+  </script>
   <!-- End scripts -->
 
 </body>
