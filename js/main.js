@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+  fetchNeighborhoods();
+  fetchCuisines();
+});
+
 let restaurants,
   neighborhoods,
   cuisines
@@ -7,10 +12,7 @@ var markers = []
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
-document.addEventListener('DOMContentLoaded', (event) => {
-  fetchNeighborhoods();
-  fetchCuisines();
-});
+
 
 
 if (window.navigator.serviceWorker){
