@@ -10,7 +10,11 @@
 
   <title>Restaurant Info</title>
 </head>
-
+<script>
+if (window.navigator.serviceWorker){
+  window.navigator.serviceWorker.register('/sw.js').then( _ => console.log("SW registered sucessfully"));
+}
+</script>
 <body class="inside">
   <!-- Beginning header -->
   <header>
