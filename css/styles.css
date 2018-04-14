@@ -237,7 +237,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+	width: 100%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -252,7 +252,7 @@ nav h1 a {
   align-self: center;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 40px 30;
 }
 #reviews-container h4 {
   color: #f58500;
